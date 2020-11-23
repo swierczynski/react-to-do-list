@@ -4,12 +4,9 @@ import AddTask from './AddTask'
 import TaskList from './TaskList'
 
 class App extends Component {
-  counter = 5
+  counter = 0
   state = {
-    tasks: [
-      {id: 0, text: 'zagrać w Cyberpunk', date: '2021-02-02', important: true, active: true, finishDate: null},
-      {id: 1, text: 'zagrac w pokera', date: '2021-03-18', important: false, active: true, finishDate: null},
-    ]
+    tasks: []
   }
   deleteTask=(id)=> {
     const tasks = [...this.state.tasks];
