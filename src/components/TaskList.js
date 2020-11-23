@@ -13,7 +13,7 @@ const TaskList = (props) => {
     const doneTasks = props.tasks.map( task => {
         if(!task.active) {
             return (
-                <Task id={task.id} task={task} />
+                <Task id={task.id} task={task} delete={props.delete} done={props.done}/>
             )
         }
     })
